@@ -1,51 +1,17 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-a {
+a{
     text-decoration: none;
+    color:#000;
 }
-
-img {
-    vertical-align: top;
+li{
+    list-style: none;
 }
-
-body {
-    font-family: $font-family;
-    color: #000;
-}
-
-.primary-bg {
-    background-color: $primary-color;
-}
-
-.h2 {
-    @include font(24px, 24px, bold);
-}
-
-.header {
-    padding: 16px 0;
-    &__left {
-        display: flex;
-    }
-    &__logo {
-        margin-right: 15px;
-        flex-shrink: 0;
-    }
-    &__text {
-        @include font(14px, 24px);
-        padding: 5px 0;
-    }
-    &__text--left {
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    &__text--right {
-        text-align: right;
-    }
-    &__link {
-        color: #000;
-    }
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
 }

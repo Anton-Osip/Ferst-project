@@ -1,0 +1,28 @@
+.header {
+     border-top: 9px solid #000;
+     background-color: $main-color;
+     padding: 15px 0 20px;
+}
+.top-bar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     &__logo {
+          display: flex;
+          align-items: center;
+     }
+     &__img{
+          vertical-align: top;
+          position: relative;
+          margin-right: 15px;
+     }
+     &__text{
+          font:normal 700 14px/24px 'PT Sans', sans-serif;
+          width: 212px;          
+          text-transform: uppercase;
+     }
+     &__contacts{
+          text-align: right;
+          font:normal 400 14px/24px 'PT Sans', sans-serif;
+     }
+}

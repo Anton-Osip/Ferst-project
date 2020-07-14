@@ -1,0 +1,60 @@
+.slider{
+     background-color:$main-color;
+     &__items{
+          position: relative;
+     }
+     &__item{
+          width: 1920px;
+          margin: 0 auto;
+     }
+     &__img{
+          display: block;
+     }
+     &__control{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+     }
+     &__arrows{
+          position: absolute;
+          bottom: 0;    
+          left: 50%; 
+          margin-left: -30px;
+     }
+     &__prev,
+     .slider__next{
+          display: block;
+          width: 31px;
+          height: 30px;
+          background-color:transparent;
+          border:none;
+          outline: none;
+          cursor: pointer;
+     }
+     &__img-btn{
+          display: block;
+     }
+     &__next{
+          margin-left: 30px;
+          transform: scale(-1,1);
+     }
+     &__dots{
+          position: absolute;
+          top: 0;
+          right: 15px;
+          display: flex;
+          flex-direction: column;
+     }
+     &__dot{
+          margin-top: 15px;
+          width: 15px;
+          height: 15px;
+          background-color:#000;
+          cursor: pointer;
+          &--active{
+               background-color:#fff;
+          }
+     }
+}

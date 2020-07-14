@@ -1,0 +1,26 @@
+.navigation{
+     padding: 7px 0;
+}
+.nav{
+     &__logo{
+          vertical-align: top;
+          margin-right: 5px;
+     }
+     &__list{
+          display: inline-block;
+     }
+     &__item{
+          display: inline-block;
+          margin-left: 40px;
+     }
+     &__link{
+          display: block;
+          padding: 9px 0px;
+          font:normal 400 14px/14px 'PT Sans', sans-serif;
+          color:#818180;
+          transition: color .3s;
+          &--active{
+               color:#000;
+          }
+     }
+}  
