@@ -54,12 +54,12 @@
                content:'';
                position: absolute;
                top: 0;right: 0;left: 0;bottom: 0;
-               background:url(../../../img/arrow-up.png) no-repeat center right 20px;
+               background:url(../../img/arrow-up.png) no-repeat center right 20px;
                background-size: auto;
                transition: background .3s;
           }
           &--active::after{
-               background:url(../../../img/arrow-down.png) no-repeat center right 20px;
+               background:url(../../img/arrow-down.png) no-repeat center right 20px;
           }
      }
      &__body{
