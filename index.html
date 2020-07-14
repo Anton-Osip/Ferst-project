@@ -62,56 +62,73 @@
                </div>
           </div>
      </section>
-     <!-- <section class="products">
+     <section class="products">
           <div class="container">
                <div class="crumbs">
-                    <span class="crumbs__step">Главная </span>/
-                    <span class="crumbs__step">Каталог</span>/
-                    <span class="crumbs__step">Название товара</span>
+                    <a href="#" class="crumbs__step">Главная </a>
+                    <a href="#" class="crumbs__step">Каталог</a>
+                    <span>Название товара</span>
                </div>
-               <div class="product">
+               <div class="product product__wrapper">
                     <div class="product__img-block">
                          <img src="img/product.jpg" alt="product" class="product__img">
                     </div>
                     <div class="product__info">
                          <h3 class="product__title">JCB 4CX Super</h3>
-                         <label class="specifications">
-                              <span class="specifications__title">Характеристики</span>
-                              <input type="checkbox" class="specifications__checkbox">
-                              <img src="img/errow_left.png" alt="arrow" class="specifications__arrow">
-                         </label>
-                         <label class="specification">
-                              <input type="radio" class="specification__radio" name="specification_1">
-                              <div class="specification__fake"></div>
-                              <span class="specification__text">Характеристика 1</span>
-                         </label>
-                         <label class="specification">
-                              <input type="radio" class="specification__radio" name="specification_1">
-                              <div class="specification__fake"></div>
-                              <span class="specification__text">Характеристика 2</span>
-                         </label>
-                         <label class="specification">
-                              <input type="radio" class="specification__radio" name="specification_1">
-                              <div class="specification__fake"></div>
-                              <span class="specification__text">Характеристика 3</span>
-                         </label>
-                         <label class="informations">
-                              <span class="informations__title">Информация</span>
-                              <input type="checkbox" class="informations__checkbox">
-                              <img src="img/errow_left.png" alt="arrow" class="informations__arrow">
-                         </label>
-                         <div class="information">
-                              <h4 class="information__price">125.000 Р.</h4>
-                              <button class="information__btn">ЗАКАЗАТЬ</button>
+                         <div class="accaedion">
+                              <div class="accardion__head accardion__head--active">
+                                   <span class="specifications__title">Характеристики</span>
+                              </div>
+                              <div class="accardion__body accardion__body--active">
+                                   <label class="specification">
+                                        <input type="radio" class="specification__radio" name="specification_1">
+                                        <div class="specification__fake"></div>
+                                        <span class="specification__text">Характеристика 1</span>
+                                   </label>
+                                   <label class="specification">
+                                        <input type="radio" class="specification__radio" name="specification_1">
+                                        <div class="specification__fake"></div>
+                                        <span class="specification__text">Характеристика 2</span>
+                                   </label>
+                                   <label class="specification">
+                                        <input type="radio" class="specification__radio" name="specification_1">
+                                        <div class="specification__fake"></div>
+                                        <span class="specification__text">Характеристика 3</span>
+                                   </label>
+                              </div>
+                              <div class="accardion__head">
+                                   <span class="specifications__title">Информация</span>
+                              </div>
+                              <div class="accardion__body">
+                                   <label class="specification">
+                                        <input type="radio" class="specification__radio" name="specification_1">
+                                        <div class="specification__fake"></div>
+                                        <span class="specification__text">Информация 1</span>
+                                   </label>
+                                   <label class="specification">
+                                        <input type="radio" class="specification__radio" name="specification_1">
+                                        <div class="specification__fake"></div>
+                                        <span class="specification__text">Информация 2</span>
+                                   </label>
+                                   <label class="specification">
+                                        <input type="radio" class="specification__radio" name="specification_1">
+                                        <div class="specification__fake"></div>
+                                        <span class="specification__text">Информация 3</span>
+                                   </label>
+                              </div>
                          </div>
                     </div>
+               </div>
+               <div class="information">
+                    <h4 class="information__price">125.000 Р.</h4>
+                    <button class="information__btn">ЗАКАЗАТЬ</button>
                </div>
                <h2 class="title">УСЛУГИ</h2>
           </div>
      </section>
      <section class="services">
-          <div class="container">
-               <div class="services__cards">
+          <div class="container ">
+               <div class="services__cards services__wrapper">
                     <div class="services__card">
                          <div class="services__img-block">
                               <img src="img/services-img.jpg" alt="services" class="services__img">
@@ -160,34 +177,40 @@
                <h2 class="tasks__title">Заголовок</h2>
                <ol class="tasks__list">
                     <li class="tasks__item">Задача 1
-                         <img src="img/pen.png" alt="pen" class='tasks__pen'>
-                         <img src="img/cross.png" alt="cross" class="tasks__cross">
+                         <a href="#" class="tasks__link"><img src="img/pen.png" alt="pen"
+                                   class='tasks__pen tasks__icon'></a>
+                         <a href="#" class="tasks__link"><img src="img/cross.png" alt="cross"
+                                   class="tasks__cross tasks__icon"></a>
                     </li>
                     <li class="tasks__item">Задача 1
-                         <img src="img/pen.png" alt="pen" class='tasks__pen'>
-                         <img src="img/cross.png" alt="cross" class="tasks__cross">
+                         <a href="#" class="tasks__link"><img src="img/pen.png" alt="pen"
+                                   class='tasks__pen tasks__icon'></a>
+                         <a href="#" class="tasks__link"><img src="img/cross.png" alt="cross"
+                                   class="tasks__cross tasks__icon"></a>
                     </li>
                </ol>
                <input type="text" class="tasks__input">
-               <img src="img/ok.png" alt="ok" class='tasks__ok'>
-               <img src="img/cross.png" alt="cross" class="tasks__cross">
+               <a href="#" class="tasks__link"><img src="img/ok.png" alt="ok"
+                         class='tasks__ok tasks__icon tasks__icon--down'></a>
+               <a href="#" class="tasks__link"><img src="img/cross.png" alt="cross"
+                         class="tasks__cross tasks__icon tasks__icon--down"></a>
           </div>
      </section>
      <section class="map">
+          <img src="img/map.jpg" alt="карта" class="map__img">
      </section>
      <footer class="footer">
           <div class="container">
-               <div class="footer__content">
+               <div class="footer__content footer__wrapper">
                     <a href="#" class="footer__logo-block">
-                         <img src="img/footer-logo.jpg" alt="Аренда" class="footer__logo">
+                         <img src="img/logo_footer.png" alt="Аренда" class="footer__logo">
                     </a>
                     <nav class="footer__nav">
                          <ul class="footer__list">
-                              <li class="footer__item"><a href="#" class="footer__link">Главная</a></li>
+                              <li class="footer__item"><a href="#" class="footer__link footer__link--active">Главная</a>
+                              </li>
                               <li class="footer__item"><a href="#" class="footer__link">Каталог техники</a></li>
                               <li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
-                         </ul>
-                         <ul class="footer__list">
                               <li class="footer__item"><a href="#" class="footer__link">Выполненные работы</a></li>
                               <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
                               <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
@@ -196,14 +219,14 @@
                     <div class="footer__copy">
                          <div class="footer__text">© Aйтекс start 2016</div>
                          <div class="footer__web">
-                              <img src="img/A-logo.png" alt="a-logo">
+                              <img src="img/some-logo.png" alt="a-logo">
                               <a href="itexstart.ru" class='copy__link'>itexstart.ru</a>
                          </div>
                     </div>
                </div>
           </div>
-     </footer> -->
-     <script src="js/script.js"></script>
+     </footer>
+     <script src="app/js/script.js"></script>
 </body>
 
 </html>
