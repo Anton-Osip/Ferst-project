@@ -2,7 +2,7 @@
      padding: 40px 0 20px;
 }
 .crumbs {
-     font:normal 400 12px/22px 'PT Sans', sans-serif;
+     font:normal 400 12px/22px $main-font;
      margin-bottom: 60px;
      &__step {
           color:$main-color;
@@ -27,12 +27,12 @@
           padding: 0 15px;
      }
      &__title {
-          font:normal 700 20px/24px 'PT Sans', sans-serif;
+          font:normal 700 20px/24px $main-font;
           margin-bottom: 40px;
      }
      &__wrapper{
           margin: 0 -15px;
-          padding: 15px;
+          padding: 15px 0;
      }
 }
 .accardion{
@@ -53,13 +53,14 @@
           &::after{
                content:'';
                position: absolute;
-               top: 0;right: 0;left: 0;bottom: 0;
-               background:url(../../img/arrow-up.png) no-repeat center right 20px;
-               background-size: auto;
-               transition: background .3s;
+               margin-top: 2px;
+               width: 20px;
+               height: 20px;
+               right: 20px;
+               background:url(../../../img/arrow-up.png) no-repeat center right;
           }
           &--active::after{
-               background:url(../../img/arrow-down.png) no-repeat center right 20px;
+               transform: rotate(180deg);
           }
      }
      &__body{
@@ -70,7 +71,7 @@
      }
 }
 .specifications__title{
-     font:normal 700 24px/24px 'PT Sans', sans-serif;
+     font:normal 700 24px/24px $main-font;
 }  
 
 .specification{
@@ -108,7 +109,7 @@
           display: none;
      }
      &__text {
-          font:normal 400 16px/1.2 'PT Sans', sans-serif;
+          font:normal 400 16px/20px $main-font;
      }
      &__radio:checked+.specification__fake::before{
           opacity: 1;
@@ -122,7 +123,7 @@
      padding: 0 15px;  
      margin-left: auto;  
      &__price{
-          font:normal 700 24px/1.2 'PT Sans', sans-serif;
+          font:normal 700 24px/29px $main-font;
           margin-right: 45px;
      }
      &__btn{
@@ -135,7 +136,7 @@
           border-radius: 3.0px;
           outline: none;
           cursor: pointer;
-          font:normal 400 12px/1.2 'PT Sans', sans-serif;
+          font:normal 400 12px/16px $main-font;
           &:hover{
                text-decoration: underline;
           }

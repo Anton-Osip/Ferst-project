@@ -25,9 +25,9 @@
      }
      &__title{
           margin-bottom: 30px;
-          font:normal 700 20px/24px 'PT Sans', sans-serif;
+          font:normal 700 20px/24px $main-font;
      }
      &__text{
-          font:normal 400 14px/24px 'PT Sans', sans-serif;
+          font:normal 400 14px/24px $main-font;
      }
 }

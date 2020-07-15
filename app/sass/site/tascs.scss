@@ -1,27 +1,33 @@
 .tasks{
-     padding: 65px 0 100px;
+     padding: 65px 0 70px;
      &__title{
           font:normal 700 24px/24px 'PT Sans', sans-serif;
           text-transform: uppercase;
           margin-bottom: 30px;
      }
-     &__item{
-          font:normal 700 24px/24px 'PT Sans', sans-serif;
-          margin: 0 30px 30px 23px;
-          list-style-type: decimal;
-
+     &__list{
+          margin-left: 23px;
      }
-     &__icon{
-          vertical-align: top;
+     &__item{
+          font:normal 700 24px/24px $main-font;
+          list-style-type: decimal;
+          margin-bottom: 30px;
+     }
+     &__wrapper{
+          width: 32px;
+          height: 32px;
           margin-left: 30px;
-          width: 24px;
-          height: 24px;
-          &--down{
-               margin-top: 8px;
-          }
+          cursor: pointer;
      }
      &__link{
-          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     &__icon{
+          margin-top: 7px;
+          width: 18px;
+          height: 18px;
      }
      &__input{
           width: 58.333%;
@@ -30,8 +36,12 @@
           border:1px solid #535353;
           box-shadow: inset 4px 4px 10px -2px rgba(0,0,0,0.34);
           padding:7px 20px ;
-          font:normal 400 18px/24px 'PT Sans', sans-serif;
+          font:normal 400 18px/24px $main-font;
           color:#535353;
           outline: none;
      }
+}
+.task__item{
+     display: flex;
+     align-items: center;
 }

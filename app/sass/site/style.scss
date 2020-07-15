@@ -17,7 +17,7 @@ li{
 }
 .title{
     text-align: center;
-    font:normal 700 24px/24px 'PT Sans', sans-serif;
+    font:normal 700 24px/24px $main-font;
     text-transform: uppercase;
     &::before{
         display: block;

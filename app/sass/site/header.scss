@@ -17,12 +17,12 @@
           margin-right: 15px;
      }
      &__text{
-          font:normal 700 14px/24px 'PT Sans', sans-serif;
+          font:normal 700 14px/24px $main-font;
           width: 212px;          
           text-transform: uppercase;
      }
      &__contacts{
           text-align: right;
-          font:normal 400 14px/24px 'PT Sans', sans-serif;
+          font:normal 400 14px/24px $main-font;
      }
 }

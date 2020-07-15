@@ -16,7 +16,7 @@
      &__link{
           display: block;
           padding: 9px 0px;
-          font:normal 400 14px/14px 'PT Sans', sans-serif;
+          font:normal 400 14px/14px $main-font;
           color:#818180;
           transition: color .3s;
           &--active{
