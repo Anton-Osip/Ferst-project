@@ -58,6 +58,7 @@
                height: 20px;
                right: 20px;
                background:url(../../img/arrow-up.png) no-repeat center right;
+               transition: transform .3s;
           }
           &--active::after{
                transform: rotate(180deg);

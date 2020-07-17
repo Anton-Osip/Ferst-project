@@ -1,7 +1,7 @@
 .tasks{
      padding: 65px 0 70px;
      &__title{
-          font:normal 700 24px/24px 'PT Sans', sans-serif;
+          font:normal 700 24px/24px $main-font;
           text-transform: uppercase;
           margin-bottom: 30px;
      }
