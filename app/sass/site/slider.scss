@@ -1,5 +1,7 @@
 .slider{
      background-color:$main-color;
+     position: relative;
+
      &__items{
           position: relative;
      }
@@ -10,13 +12,7 @@
           width: 100%;
           display: block;
      }
-     &__control{
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-     }
+
      &__arrows{
           position: absolute;
           bottom: 1px;    
