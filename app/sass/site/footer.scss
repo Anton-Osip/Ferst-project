@@ -45,6 +45,8 @@
 }
 .copy__link{
      margin-left: 20px;
+     padding-top: 5px;
+     padding-bottom: 5px;
      text-decoration: underline;
      @include font(400,14px,18px,$main-font); 
      color: #d3d3d3;
