@@ -1,28 +1,58 @@
 .header {
-     border-top: 9px solid #000;
      background-color: $main-color;
-     padding: 15px 0 20px;
+     border-top: 9px solid $black;
 }
 .top-bar {
+     padding: 15px 0 19px;
      display: flex;
      justify-content: space-between;
      align-items: center;
+     flex-wrap: wrap;
      &__logo {
           display: flex;
           align-items: center;
      }
-     &__img{
-          vertical-align: top;
-          position: relative;
-          margin-right: 15px;
+     &__img {
+          display: block;
+          margin-right: 17px;
      }
-     &__text{
-          font:normal 700 14px/24px $main-font;
-          width: 212px;          
+     &__text {
+          width: 161px;
+          @include font(700,14px,24px,$main-font);
           text-transform: uppercase;
      }
-     &__contacts{
+     &__adress {
           text-align: right;
-          font:normal 400 14px/24px $main-font;
+     }
+     &__city{
+          @include font(400,14px,24px,$main-font); 
+     }
+     &__phone{
+          padding-top: 3px;
+          padding-bottom: 3px;
+          @include font(400,14px,24px,$main-font); 
      }
 }
+@media(max-width:624px){
+     .header {
+          border-top: 5px solid $black;
+     }
+     .top-bar {
+          padding: 10px 0 15px;
+          &__logo{
+               margin-bottom: 10px;
+          }
+          &__img {
+               margin-right: 12px;
+          }
+          &__adress {
+               text-align: left;
+          }
+          &__text {
+               width: auto;
+               @include font(700,14px,24px,$main-font);
+          }
+     }
+}
+
+

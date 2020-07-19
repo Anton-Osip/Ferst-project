@@ -8,4 +8,3 @@ for (let i = 0; i < accardionHead.length; i++) {
           this.nextElementSibling.classList.toggle('accardion__body--active')
      }
 }
-

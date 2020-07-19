@@ -1,11 +1,14 @@
 .products {
-     padding: 40px 0 20px;
+     padding: 40px 0 ;
 }
-.crumbs {
-     font:normal 400 12px/22px $main-font;
+.crumbs {     
+     @include font(400,12px,24px, $main-font);
      margin-bottom: 60px;
      &__step {
           color:$main-color;
+          display: inline-block;
+          padding-top: 6px;
+          padding-bottom: 6px;
           &::after{
                content:'/';
                color:#000;
@@ -13,26 +16,13 @@
      }
 }
 .product {
-     margin-top: 60px;
-     display: flex;
-     &__img-block{
-          width: 33.3%;
-          padding: 0 15px;
-     }
+     margin-bottom: 10px;
      &__img{
           width: 100%;
      }
-     &__info{
-          width: 66.6%;
-          padding: 0 15px;
-     }
      &__title {
-          font:normal 700 20px/24px $main-font;
-          margin-bottom: 40px;
-     }
-     &__wrapper{
-          margin: 0 -15px;
-          padding: 15px 0;
+          @include font(700,24px,24px, $main-font);
+          margin-bottom: 38px;
      }
 }
 .accardion{
@@ -54,14 +44,14 @@
                content:'';
                position: absolute;
                margin-top: 2px;
-               width: 20px;
-               height: 20px;
+               width: 21px;
+               height: 21px;
                right: 20px;
-               background:url(../../img/arrow-up.png) no-repeat center right;
-               transition: transform .3s;
+               background:url(../../../img/spritesheet.png) no-repeat -5px -36px;
+               transition:background-position  .5s;
           }
           &--active::after{
-               transform: rotate(180deg);
+               background-position: -5px -5px;
           }
      }
      &__body{
@@ -72,7 +62,7 @@
      }
 }
 .specifications__title{
-     font:normal 700 24px/24px $main-font;
+     @include font(700,24px,24px, $main-font);
 }  
 
 .specification{
@@ -110,36 +100,58 @@
           display: none;
      }
      &__text {
-          font:normal 400 16px/20px $main-font;
+          @include font(400,16px,20px, $main-font);
      }
      &__radio:checked+.specification__fake::before{
           opacity: 1;
      }
 }
 .information{
-     width: 66.6%;
      display: flex;
      align-items: center;
-     margin-bottom: 40px; 
-     padding: 0 15px;  
      margin-left: auto;  
      &__price{
-          font:normal 700 24px/29px $main-font;
+          @include font(700,24px,30px, $main-font);
           margin-right: 45px;
      }
      &__btn{
           box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.34);
           width: 132px;
           height: 32px;
-          background-color: #000000;
           background-image: linear-gradient(0.0deg, #fab500 0%, #fdcf03 100%);
           border: 1.0px solid #fab500;
           border-radius: 3.0px;
           outline: none;
           cursor: pointer;
-          font:normal 400 12px/16px $main-font;
+          @include font(400,12px,16px, $main-font);
           &:hover{
                text-decoration: underline;
+          }
+     }
+}
+@media(max-width:768px){
+     .products {
+          padding: 20px 0 ;
+     }
+     .crumbs {     
+          margin-bottom: 20px;
+     }
+     .product {
+          &__img-box{
+               display: none;
+          }
+          &__title {
+               @include font(700,24px,24px, $main-font);
+               margin-bottom: 38px;
+          }
+     }
+}
+@media(max-width:400px){
+     .information{
+     margin-left: 0 ;  
+          &__price{
+               @include font(700,20px,30px, $main-font);
+               margin-right: 15px;
           }
      }
 }

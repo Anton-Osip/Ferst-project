@@ -1,56 +1,80 @@
-.slider{
-     background-color:$main-color;
-     position: relative;
-
-     &__items{
-          position: relative;
-     }
+.slider {
      &__item{
-          text-align: center;
+          display: block !important;
      }
-     &__img{
+     &__img {
           width: 100%;
-          display: block;
+          margin: 0 auto;
+          z-index: 5;
      }
-
-     &__arrows{
-          position: absolute;
-          bottom: 1px;    
-          left: 50%; 
-          margin-left: -30px;
-     }
-     &__prev,
-     .slider__next{
+}
+.slick{
+     &-arrow{
+          font-size: 0;
           display: block;
-          width: 31px;
-          height: 30px;
-          background-color:transparent;
-          border:none;
+          background: url(../../img/errow_left.png) no-repeat center center;
+          width: 30px;
+          height: 29px;
+          border: none;
           outline: none;
-          cursor: pointer;
-     }
-     &__img-btn{
-          display: block;
-     }
-     &__next{
-          margin-left: 30px;
-          transform: scale(-1,1);
-     }
-     &__dots{
           position: absolute;
-          top: 0;
-          right: 15px;
-          display: flex;
-          flex-direction: column;
-     }
-     &__dot{
-          margin-top: 15px;
-          width: 15px;
-          height: 15px;
-          background-color:#000;
+          bottom: 0;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
           cursor: pointer;
-          &--active{
-               background-color:#fff;
+     }
+     &-prev{
+          bottom: 32px;
+          z-index: 999;
+          transform:translateX(-50%);
+     }
+     &-next{
+          transform: scale(-1,1)
+          translateX(-50%);
+     }
+     &-dots{
+          position: absolute;
+          max-width: 970px;
+          padding: 0 15px;
+          margin: 0 auto;
+          top: 0;
+          right: 0;
+          left: 0;
+          li{
+               width: 30px;
+               height: 30px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               cursor: pointer;
+               margin-top: 5px;
+               margin-left: auto;
+               margin-right: -6px;
+               button{
+                    font-size: 0;
+                    width: 16px;
+                    height: 16px;
+                    outline:none;
+                    border: none;
+                    cursor: pointer;
+                    background-color: $black;
+               }
+          }
+     }
+     &-active{
+          button{
+               background-color: #fff !important;
+          }
+     }
+}
+@media(max-width:724px){
+     .slick{
+          &-arrow{
+               display: none !important ;
+          }
+          &-dots{
+               display: none !important ;
           }
      }
 }
