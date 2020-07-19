@@ -32,10 +32,10 @@
           
      }
      &__text{
-          @include font(700,14px,24px,$main-font); 
+          @include font(400,14px,24px,$main-font); 
           color: #d3d3d3;
           text-align: right;
-          margin-bottom: 25px;
+          margin-bottom: 10px;
      }
      &__web{
           display: flex;
