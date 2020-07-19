@@ -16,7 +16,7 @@
           text-decoration: none;
           color: #818180;
           margin-right: 15px;
-          font:normal 400 14px/30px $main-font;
+          @include font(400,14px,30px,$main-font);
           padding:5px 0 5px 15px;
           position: relative;
           &--active{
@@ -24,7 +24,7 @@
                &::before{
                     content:'>';
                     position: absolute;
-                    font:normal 400 14px/30px $main-font;
+                    @include font(700,14px,24px,$main-font);
                     color: #ffbb02;
                     left: 0;
                }
@@ -32,7 +32,7 @@
           
      }
      &__text{
-          font:normal 400 14px/16px $main-font;
+          @include font(700,14px,24px,$main-font); 
           color: #d3d3d3;
           text-align: right;
           margin-bottom: 25px;
@@ -46,7 +46,7 @@
 .copy__link{
      margin-left: 20px;
      text-decoration: underline;
-     font:normal 400 14px/18px $main-font;
+     @include font(400,14px,18px,$main-font); 
      color: #d3d3d3;
 }
 @media(max-width:768px){

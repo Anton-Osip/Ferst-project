@@ -33,10 +33,10 @@
      }
      &__title{
           margin-bottom: 30px;
-          font:normal 700 20px/24px $main-font;
+          @include font(700,20px,24px,$main-font);
      }
      &__text{
-          font:normal 400 14px/24px $main-font;
+          @include font(400,14px,24px,$main-font);
      }
 }
 @media(max-width:480px){
